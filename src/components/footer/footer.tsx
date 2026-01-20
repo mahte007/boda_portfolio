@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="flex justify-between bg-b1 border-t-1 border-b3 h-32 px-32 text-white py-8 items-center">
+    <footer className="flex justify-between bg-b1 border-t border-b3 h-32 px-32 text-white py-8 items-center">
       <div>
         © {new Date().getFullYear()} {"Boda Viktor"}
       </div>
