@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -10,17 +11,22 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-b1: #0E1A2B;
+  --color-b2: #3A3F46;
+  --color-b3: #C6A25D;
+
+  --color-bgBlueTint: #EEF2F6;
+  --color-footer: #0E1A2B;
+  --color-lightGray: #F6F7F9;
+  --color-sand: #F4F1EC;
+  --color-navytint: #E9EDF3;
+
+  --font-playfair: "Playfair Display";
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
