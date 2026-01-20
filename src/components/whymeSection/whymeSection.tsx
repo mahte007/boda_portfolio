@@ -38,21 +38,21 @@ export default function WhyMeSection() {
 
   return (
     <div
-      className="px-24 py-32 bg-sand"
+      className="md:px-24 py-32 bg-sand"
       style={{
         background:
           "linear-gradient(180deg, #EEF2F6 0%, #F4F1EC 20%, #F4F1EC 40%,  #F4F1EC 60%, #F4F1EC 80%, #EEF2F6 100%)",
       }}
     >
-      <div className="flex items-center gap-4 mb-4">
-        <span className="h-0.5 flex-1 bg-b3" />
+      <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
+        <span className="hidden md:block h-0.5 flex-1 bg-b3" />
         <h2 className="text-b2 text-[32px] font-semibold">Hogyan dolgozom?</h2>
-        <span className="h-0.5 flex-1 bg-b3" />
+        <span className="h-0.5 w-4/5 md:flex-1 bg-b3" />
       </div>
-      <p className="text-b2 w-full text-center mb-16">
+      <p className="text-b2 mx-auto w-4/5 md:w-full text-center mb-16">
         Egy átlátható folyamat az Ön pénzügyi céljaiért
       </p>
-      <div className="shadow-md/10 rounded-lg px-5 pb-5">
+      <div className="shadow-md/10 rounded-lg px-5 pb-5 w-min xl:w-auto mx-auto">
         <Timeline timeline={timeline} />
       </div>
     </div>

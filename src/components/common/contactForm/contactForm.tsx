@@ -38,7 +38,7 @@ export default function ContactForm() {
         className="hidden"
       />
 
-      <div className="flex justify-between gap-8">
+      <div className="flex flex-col md:flex-row justify-between gap-8">
         <div className="space-y-1 w-full">
           <label className="block text-sm font-medium">Név</label>
           <input

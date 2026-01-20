@@ -9,10 +9,10 @@ import { getClientIp } from "@/utils/useGetIp";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const Schema = z.object({
-  name: z.string().min(1, "Name is required"),
-  email: z.string().email("A valid email is required"),
-  message: z.string().min(10, "Message must be at least 10 characters"),
-  subject: z.string().min(1, "Subject is required"),
+  name: z.string().min(1, "Kérlek add meg a neved."),
+  email: z.string().email("Kérlek add meg az email címed."),
+  message: z.string().min(10, "Az üzenetnek legalább 10 karakter hosszúnak kell lennie"),
+  subject: z.string().min(1, "Kérlek adj meg tárgyat."),
   website: z.string().optional(), // honeypot
   formStartedAt: z.coerce.number().optional(), // time trap
 });

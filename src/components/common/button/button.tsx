@@ -11,6 +11,7 @@ type ButtonProps = {
   rounded?: boolean;
   id?: string;
   href?: string;
+  onClickFunction?: () => void;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
 export default function Button({
@@ -20,6 +21,7 @@ export default function Button({
   rounded = false,
   id,
   href,
+  onClickFunction,
   className,
   ...props
 }: ButtonProps) {
@@ -34,10 +36,13 @@ export default function Button({
   };
 
   const handleOnClick = useCallback(() => {
+    if (onClickFunction !== undefined) {
+      onClickFunction()
+    }
     if (href) {
       scrollSmooth(href);
     }
-  }, [href, scrollSmooth]);
+  }, [href, scrollSmooth, onClickFunction]);
 
   if (variant === "link") {
     return (

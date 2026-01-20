@@ -12,13 +12,13 @@ import Image from "next/image";
 
 export default function ServicesSection() {
   return (
-    <div id="services" className="px-24 py-32 bg-bgBlueTint">
-      <div className="flex items-center mb-20 gap-4">
+    <div id="services" className="md:px-24 py-32 bg-bgBlueTint">
+      <div className="flex flex-col md:flex-row items-center mb-20 gap-4">
         <h2 className="text-b2 text-[32px] font-semibold">Szolgáltatásaim</h2>
-        <span className="h-0.5 w-full bg-b3" />
+        <span className="h-0.5 w-4/5 md:w-full bg-b3" />
       </div>
-      <div className="flex gap-24">
-        <div className="flex gap-16">
+      <div className="flex flex-col lg:flex-row gap-24 items-center lg:items-start">
+        <div className="grid lg:grid-cols-2 2xl:grid-cols-4 grid-cols-1 grid-rows-1 gap-16">
           <Card icon={chart} title="Befektetési Tanácsadás">
             Befektetési portfóliók építése
           </Card>
