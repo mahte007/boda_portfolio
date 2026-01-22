@@ -26,7 +26,7 @@
 }
 
 body {
-  background: var(--background);
+  background: var(--color-sand);
   color: var(--foreground);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
