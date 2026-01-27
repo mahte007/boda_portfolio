@@ -1,8 +1,10 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useCallback, useEffect } from "react";
 import { useFormStatus } from "react-dom";
 import { submitContact, type ContactActionState } from "./actions";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function SubmitButton() {
   const { pending } = useFormStatus();
@@ -23,10 +25,20 @@ function FieldError({ msg }: { msg?: string }) {
 }
 
 export default function ContactForm() {
+  const { pending } = useFormStatus();
+
   const [state, formAction] = useActionState<ContactActionState, FormData>(
     submitContact,
     null,
   );
+
+  useEffect(() => {
+    if (!state) return;
+    if (state.ok) {
+      toast.success("Üzenetét sikeresen elküldtük!");
+      console.log("success");
+    } else if (state.errors?._form?.[0]) toast.error(state.errors._form[0]);
+  }, [state]);
 
   return (
     <form action={formAction} className="space-y-4 text-white">
@@ -45,7 +57,7 @@ export default function ContactForm() {
             name="name"
             autoComplete="name"
             className="w-full px-3 py-2 bg-white/15 shadow-xl"
-            placeholder="Teszt Elek"
+            placeholder="Kovács István"
           />
           <FieldError
             msg={state?.ok === false ? state.errors?.name?.[0] : undefined}
@@ -59,7 +71,7 @@ export default function ContactForm() {
             type="email"
             autoComplete="email"
             className="w-full px-3 py-2 bg-white/15 shadow-xl"
-            placeholder="teszt.elek@példa.com"
+            placeholder="kovacs.istvan@példa.com"
           />
           <FieldError
             msg={state?.ok === false ? state.errors?.email?.[0] : undefined}
@@ -85,7 +97,7 @@ export default function ContactForm() {
         <textarea
           name="message"
           rows={6}
-            className="w-full px-3 py-2 bg-white/15 shadow-xl"
+          className="w-full px-3 py-2 bg-white/15 shadow-xl"
           placeholder="Ide írd az üzeneted..."
         />
         <FieldError
@@ -94,13 +106,13 @@ export default function ContactForm() {
       </div>
 
       <div className="flex items-center gap-3 justify-end">
-        <SubmitButton />
-        {state?.ok === true && (
-          <p className="text-sm text-green-700">Elküldve!</p>
-        )}
-        {state?.ok === false && state.errors?._form?.[0] && (
-          <p className="text-sm text-red-600">{state.errors._form[0]}</p>
-        )}
+        <button
+          type="submit"
+          disabled={pending}
+          className="rounded-xl bg-b3 px-4 py-2 text-white text-[22px] font-medium disabled:opacity-60 w-48 h-12"
+        >
+          {pending ? "Küldés..." : "Küldés"}
+        </button>
       </div>
     </form>
   );

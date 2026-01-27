@@ -9,14 +9,14 @@ export default function Footer() {
       <div>
         © {new Date().getFullYear()} {"Boda Viktor"}
       </div>
-      <div className="flex gap-4">
+      {/* <div className="flex gap-4">
         <a href="#">
           <Image alt="facebook" src={facebook} width={50} height={50} />
         </a>
         <a href="#">
           <Image alt="instagram" src={instagram} width={50} height={50} />
         </a>
-      </div>
+      </div> */}
     </footer>
   );
 }

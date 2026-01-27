@@ -15,7 +15,7 @@ export default function Header() {
   };
 
   return (
-    <header className="flex justify-between px-8 lg:px-24 py-4 sticky z-50 top-0 bg-sand items-center">
+    <header className="flex justify-between px-8 lg:px-24 py-4 sticky z-20 top-0 bg-sand items-center">
       {/* <Image alt="" src={"/BV.png"} width={58} height={58}/> */}
       <a href="#home">
         <h1 className="text-[32px] lg:text-[40px] xl:text-[44px] text-b3 font-playfair font-bold">
@@ -52,7 +52,7 @@ export default function Header() {
         {!is1024 && <span className="h-px w-full bg-b3 my-2" />}
         
         <Button variant="primary" href="#contact" onClickFunction={toggleMenu}>
-          Foglalj időpontot
+          Időpont egyeztetés
         </Button>
       </nav>
       <button

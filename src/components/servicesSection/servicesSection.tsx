@@ -18,7 +18,7 @@ export default function ServicesSection() {
         <span className="h-0.5 w-4/5 md:w-full bg-b3" />
       </div>
       <div className="flex flex-col lg:flex-row gap-24 items-center lg:items-start">
-        <div className="grid lg:grid-cols-2 2xl:grid-cols-4 grid-cols-1 grid-rows-1 gap-16">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-4 grid-cols-1 grid-rows-1 gap-16">
           <Card icon={chart} title="Befektetési Tanácsadás">
             Befektetési portfóliók építése
           </Card>
@@ -38,26 +38,26 @@ export default function ServicesSection() {
             <div className="flex items-center text-b2">
               <Image alt="envelope" src={phone} width={25} height={25} />
               <p className="pl-2 pr-1 font-semibold">Telefon:</p>
-              <a href="tel:+36 70 123 4567" className="underline">+36 70 123 4567</a>
+              <a href="tel:+36 20 360 0358" className="underline">+36 20 360 0358</a>
             </div>
             <div className="flex items-center text-b2">
               <Image alt="phone" src={envelope} width={25} height={25} />
               <p className="pl-2 pr-1 font-semibold">Email:</p>
-              <a href="mailto:boda.viktor@gmail.com" className="underline">boda.viktor@gmail.com</a>
+              <a href="mailto:boda.viktor1@ovb.hu" className="underline">boda.viktor1@ovb.hu</a>
             </div>
-            <div className="flex items-center text-b2">
+            {/* <div className="flex items-center text-b2">
               <Image alt="location" src={location} width={25} height={25} />
               <p className="pl-2 pr-1 font-semibold">Cím:</p>
               <p>7621 Pécs, Valami utca 12</p>
-            </div>
-            <div className="flex gap-4 mt-4 items-center">
+            </div> */}
+            {/* <div className="flex gap-4 mt-4 items-center">
               <a href="#">
                 <Image alt="facebook" src={facebook} width={50} height={50} />
               </a>
               <a href="#">
                 <Image alt="instagram" src={instagram} width={50} height={50} />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

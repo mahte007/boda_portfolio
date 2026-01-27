@@ -28,9 +28,9 @@ export default function WhyMeSection() {
     },
     {
       step: "5",
-      title: "Folyamatos támogatás",
+      title: "Utánkövetés",
       description:
-        "Utókövetés, finomhangolás és optimalizálás a hosszú távú eredmények biztosítása érdekében.",
+        "Folyamatos támogatás, finomhangolás és optimalizálás a hosszú távú eredmények biztosítása érdekében.",
     },
   ];
 
@@ -38,7 +38,7 @@ export default function WhyMeSection() {
 
   return (
     <div
-      className="md:px-24 py-32 bg-sand"
+      className="md:px-24 py-32 pb-16 bg-sand"
       style={{
         background:
           "linear-gradient(180deg, #EEF2F6 0%, #F4F1EC 20%, #F4F1EC 40%,  #F4F1EC 60%, #F4F1EC 80%, #EEF2F6 100%)",
