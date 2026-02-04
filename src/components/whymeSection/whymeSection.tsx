@@ -30,7 +30,7 @@ export default function WhyMeSection() {
       step: "5",
       title: "Utánkövetés",
       description:
-        "Folyamatos támogatás, finomhangolás és optimalizálás a hosszú távú eredmények biztosítása érdekében.",
+        "Folyamatos támogatás és optimalizálás a hosszú távú eredmények biztosítása érdekében.",
     },
   ];
 

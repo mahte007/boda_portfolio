@@ -2,15 +2,17 @@ import Image from "next/image";
 import quote from "/public/quote.svg";
 
 import { ReactNode } from "react";
+import clsx from "clsx";
 
 type QuoteCardProps = {
+  className?: string;
   children: ReactNode;
 };
 
-export default function QuoteCard({ children }: QuoteCardProps) {
+export default function QuoteCard({ children, className }: QuoteCardProps) {
   return (
     <div
-      className="border-t-2 border-b3 rounded-2xl shadow-md/10 p-4 w-80 md:w-100 bg-white">
+      className={clsx("border-t-2 border-b3 rounded-2xl shadow-md/10 p-4 w-80 md:w-100 bg-white", className)}>
       <Image alt="quote" src={quote} width={50} height={50} className="mb-4" />
       <p className="font-playfair text-[24px] font-semibold">{children}</p>
     </div>

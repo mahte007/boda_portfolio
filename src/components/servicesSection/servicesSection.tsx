@@ -32,10 +32,10 @@ export default function ServicesSection() {
             Hitelügyintézés stressz nélkül
           </Card>
         </div>
-        <div className="flex flex-col p-4 gap-8">
+        <div className="flex flex-col p-4 gap-8 w-1/3">
           <h2 className="text-[22px] font-medium text-b3">Elérhetőségek</h2>
           <div className="flex flex-col gap-4">
-            <div className="flex items-center text-b2">
+            <div className="flex items-center text-b2 w-full">
               <Image alt="envelope" src={phone} width={25} height={25} />
               <p className="pl-2 pr-1 font-semibold">Telefon:</p>
               <a href="tel:+36 20 360 0358" className="underline">+36 20 360 0358</a>

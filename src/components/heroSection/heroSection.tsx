@@ -19,14 +19,14 @@ export default function HeroSection() {
       />
 
       {/* Gradient */}
-      <div className="hidden lg:block lg:absolute right-0 bg-[linear-gradient(100deg,rgba(255,255,255,1)_30%,rgba(0,0,0,0)_60%)] xl:bg-[linear-gradient(100deg,rgba(255,255,255,1)_20%,rgba(0,0,0,0)_60%)] w-262.5 h-125" />
+      <div className="hidden lg:block lg:absolute right-0 bg-[linear-gradient(100deg,rgba(255,255,255,1)_30%,rgba(0,0,0,0)_60%)] xl:bg-[linear-gradient(100deg,rgba(255,255,255,1)_40%,rgba(0,0,0,0)_80%)] 2xl:bg-[linear-gradient(100deg,rgba(255,255,255,1)_20%,rgba(0,0,0,0)_60%)] w-262.5 h-125" />
 
       {/* Text */}
-      <div className="flex flex-col items-center text-center md:items-start md:text-left lg:items-center lg:absolute xl:left-25 lg:top-2/4 lg:-translate-y-1/2 z-10 lg:max-w-[60%] px-4 md:px-12 py-8 lg:py-0">
-        <h1 className="uppercase text-[44px] xl:text-center text-b2 font-bold mb-8">
+      <div className="flex flex-col items-center text-center lg:items-start lg:text-left lg:absolute xl:left-25 lg:top-2/4 lg:-translate-y-1/2 z-10 lg:max-w-[60%] px-4 md:px-12 xl:px-0 py-8 lg:py-0">
+        <h1 className="uppercase text-[44px] xl:text-center text-b2 font-bold mb-8 w-full">
           Pénzügyi <span className="text-b3">Szakértő</span>
           <br />
-          <span className="flex justify-center md:justify-start items-center gap-4">
+          <span className="flex justify-center lg:justify-start items-center gap-4">
             <span className="hidden xl:block h-0.5 w-full bg-b3" />
             A céljaidért
             <span className="hidden xl:block h-0.5 w-full bg-b3" />
