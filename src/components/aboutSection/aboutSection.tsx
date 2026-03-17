@@ -14,8 +14,10 @@ export default function AboutSection() {
           <Image
             alt="portrait"
             src="/boda.webp"
+            quality={100}
             width={245}
             height={245}
+            sizes="(max-width: 768px) 100vw, 245px"
             style={{
               maxWidth: "100%",
               height: "auto",
