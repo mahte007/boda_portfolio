@@ -13,7 +13,7 @@ export default function AboutSection() {
         <div className="flex flex-col items-center md:items-center 2xl:flex-row xl:w-1/3 2xl:w-2/3 gap-8">
           <Image
             alt="portrait"
-            src="/portrait.jpeg"
+            src="/boda.webp"
             width={245}
             height={245}
             style={{

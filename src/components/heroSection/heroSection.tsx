@@ -6,7 +6,7 @@ export default function HeroSection() {
     <div className="flex flex-col lg:block lg:relative lg:w-full lg:h-125 justify-between">
       {/* Image */}
       <Image
-        src="/topViewHero.png"
+        src="/topViewHero.webp"
         alt="hero"
         className="lg:object-cover lg:absolute lg:right-0 lg:h-125"
         priority

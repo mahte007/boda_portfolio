@@ -33,17 +33,25 @@ export default function ServicesSection() {
           </Card>
         </div>
         <div className="flex flex-col p-4 gap-8 w-1/3">
-          <h2 className="text-[22px] font-medium text-b3">Elérhetőségek</h2>
-          <div className="flex flex-col gap-4">
-            <div className="flex items-center text-b2 w-full">
-              <Image alt="envelope" src={phone} width={25} height={25} />
-              <p className="pl-2 pr-1 font-semibold">Telefon:</p>
-              <a href="tel:+36 20 360 0358" className="underline">+36 20 360 0358</a>
+          <h2 className="text-[22px] font-medium text-b3 text-center lg:text-left">Elérhetőségek</h2>
+          <div className="flex flex-col gap-4 text-center justify-center lg:text-left lg:justify-start">
+            <div className="flex flex-col lg:flex-row items-center text-b2 w-full whitespace-nowrap gap-2">
+              <div className="flex flex-row items-center justify-center pl-2 pr-1 ">
+                <Image alt="envelope" src={phone} width={25} height={25} />
+                <p className="pl-2 pr-1 font-semibold">Telefon:</p>
+              </div>
+              <a href="tel:+36 20 360 0358" className="underline">
+                +36 20 360 0358
+              </a>
             </div>
-            <div className="flex items-center text-b2">
-              <Image alt="phone" src={envelope} width={25} height={25} />
-              <p className="pl-2 pr-1 font-semibold">Email:</p>
-              <a href="mailto:boda.viktor1@ovb.hu" className="underline">boda.viktor1@ovb.hu</a>
+            <div className="flex flex-col lg:flex-row items-center text-b2 w-full whitespace-nowrap gap-2">
+              <div className="flex flex-row items-center justify-center pl-2 pr-1 ">
+                <Image alt="phone" src={envelope} width={25} height={25} />
+                <p className="font-semibold">Email:</p>
+              </div>
+              <a href="mailto:boda.viktor1@ovb.hu" className="underline">
+                boda.viktor1@ovb.hu
+              </a>
             </div>
             {/* <div className="flex items-center text-b2">
               <Image alt="location" src={location} width={25} height={25} />
