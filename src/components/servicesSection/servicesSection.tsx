@@ -32,7 +32,7 @@ export default function ServicesSection() {
             Hitelügyintézés stressz nélkül
           </Card>
         </div>
-        <div className="flex flex-col p-4 gap-8 w-1/3">
+        <div className="flex flex-col p-4 gap-8 w-1/3 items-center lg:items-start">
           <h2 className="text-[22px] font-medium text-b3 text-center lg:text-left">Elérhetőségek</h2>
           <div className="flex flex-col gap-4 text-center justify-center lg:text-left lg:justify-start">
             <div className="flex flex-col lg:flex-row items-center text-b2 w-full whitespace-nowrap gap-2">
