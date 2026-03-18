@@ -47,7 +47,7 @@ export default function ServicesSection() {
             <div className="flex flex-col lg:flex-row items-center text-b2 w-full whitespace-nowrap gap-2">
               <div className="flex flex-row items-center justify-center pl-2 pr-1 ">
                 <Image alt="phone" src={envelope} width={25} height={25} />
-                <p className="font-semibold">Email:</p>
+                <p className="pl-2 pr-1 font-semibold">Telefon:</p>
               </div>
               <a href="mailto:boda.viktor1@ovb.hu" className="underline">
                 boda.viktor1@ovb.hu
